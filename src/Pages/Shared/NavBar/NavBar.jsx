@@ -17,7 +17,6 @@ const handelLogOut =()=>{
 }
   const navItems = <>
   <Link to="/"><li className="px-3">Home</li></Link>
-  <Link><li className="px-3">About</li></Link>
   <Link><li className="px-3">Services</li></Link>
  
   {
@@ -26,6 +25,7 @@ const handelLogOut =()=>{
     <button onClick={handelLogOut} className="px-3">LogOut</button>
     </>:<Link to='/login'><li>Login</li></Link>
   }
+      <Link to='/singUp'><li className="px-3">Sing Up</li></Link>
   </>
     return (
         <div className="navbar bg-base-100 h-24 mb-6">
